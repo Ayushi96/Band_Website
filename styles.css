@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter -\ Zero \Zero.woff2") format("woff"),
+    url("Fonts/Booter -\ Zero \Zero.woff2") format("woff2");
+    font-width: normal;
+    font-style: normal;
+}
+* {
+    box-sizing : border-box;
+    font-family : Raleway;
+    color : #777;
+}
+
+html, body 
+{
+    margin : 0;
+    padding: 0; /* padding is the space between the contenr and the border */
+}
+
+.nav ul{
+    margin : 0;
+}
+
+.nav li {
+    display : inline; /* by default inline allows spacing only on the left and right not top and bottom */
+}
+.nav a {
+    display : inline-block; /* inline-block allows spacing on the top and bottom as well */  
+    padding : .5em;
+    color : white;
+    text-decoration : none; /* for removing the hyperlink underline on the tag a text */
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+    text-align:  center;
+    font-size : 1.1em;
+    font-weight: lighter;   /* so that the color blends better in the background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+    padding : 0 5%; /* 0 is for top and bottom and 5 for left and right */
+}
+.main-header
+{
+    background-color : rgba(0, 0, 0, 0.6);
+    background-image: url("Images/album_background_imge.jpg");
+    /* background-blend-mode: multiply; */ /* how the backround image and the thing on top of it merge together */
+    background-size : cover;  /* so that the background covers the whole screen */
+
+    padding-bottom : 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin : 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight : normal;
+    color: white;    
+}
+
+.band-name-large {
+    font-size: 9em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px; /* the about section text will stop at 900 px of width */
+    margin: 0 auto; /* this means that on the top and bttom we will have no margin but as we increase the screen size the left and right spacing will adjust itself */
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight : normal; /* to make the heading not bold, as all the <h > tags are bold by default */
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #56ccf2;
+    color: white;
+    padding: 0.25em 0;
+
+}
+
+.main-footer-container {
+    display: flex; /* display side by side */
+    align-items: center; /* he text should be in the center of the footer rather than the top */
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 0.5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle; /* for the text inside the button */
+    padding: 0.67em;
+    cursor: pointer; /* on hover change the cursor to a pointer */
+}
+
+.btn-header {
+    margin: 0.5em 15% 2em 15%; /* order is top rigth bottom and left */
+    color: white;
+    border: 2px solid #209cdb;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-play {
+    margin: 0 auto; /* buttons are not block level elements and only block elements can have an auto margin */
+    /* to get around this problem */
+    display: block; /* this will make the button to be displayed in the center */
+    color: #209cdb;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin: 1em; /* will give the space on the outside of the border */
+}
+
+/* to remove the border below the last row of the tour-row class */
+.tour-row:last-child {
+    border-bottom: none ;
+}
+
+.tour-item {
+    display: inline-block; /* the inline block elements add a little amount of space between elements that we can not remove */
+    /* so we have to compensate for it by makeing the elements space occupied percentage to be accordingly less than 100 */
+
+    padding-right: 0.5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%;
+
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tout-btn {
+    max-width: 19%; /* so that on increasing the size of the sceen, the button does not keep on becoming wide and wide */
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56ccF2;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.shop-item {
+    margin: 30px; /* so that the items dont run up next to each other */
+
+}
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;    
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;   /* all the elements will be placed side by side, we dont want that, we want items to be wraped */
+    flex-wrap: wrap; /* this will wrap the images and display images as a grid */
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-column {
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
