@@ -1,5 +1,5 @@
 #  Band Website : MAROON 5
- ![Maroon 5: Band Members](Images/image2)
+ ![Maroon 5: Band Members](Images/image2.jpg)
 
 This is a website made using HTML and css for the music band Maroon 5 !! I created this website after going through the Web Dev series by Web Dev Simplified on Youtube!
 
